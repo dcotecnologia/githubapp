@@ -116,8 +116,17 @@ Other things to note about the Windows packaging process:
 
 ### Linux
 
-Refer to the [`shiftkey/desktop`](https://github.com/shiftkey/desktop) fork
-for packaging details about Linux.
+`yarn package` on Linux produces, in `dist/`:
+
+ - `GitHubDesktop-linux-<arch>.tar.gz` - the packaged app directory.
+ - `GitHubDesktop-<arch>.deb` - built with `dpkg-deb` (no extra npm
+   dependencies). It installs the app to `/opt/GitHubDesktop`, adds a
+   `github-desktop` command and a `.desktop` entry registering the
+   `x-github-client`, `x-github-desktop-auth` and `github-mac` URL schemes.
+
+Only x64 is built in CI. Refer to the
+[`shiftkey/desktop`](https://github.com/shiftkey/desktop) fork for other Linux
+package formats.
 
 ## `script/publish.ts`
 
