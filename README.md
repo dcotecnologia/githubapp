@@ -25,7 +25,7 @@ Download the official installer for your operating system:
  - [Windows](https://central.github.com/deployments/desktop/desktop/latest/win32)
  - [Windows machine-wide install](https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi)
 
-Linux is not officially supported; however, you can find installers created for Linux from a fork of GitHub Desktop in the [Community Releases](https://github.com/desktop/desktop#community-releases) section.
+Linux (x64) builds are produced by CI as a `.deb` package and a `.tar.gz` archive; see [Installing on Linux](docs/installation.md#linux) for details. You can also find installers for other Linux distributions from a fork of GitHub Desktop in the [Community Releases](#community-releases) section.
 
 ### Beta Channel
 
